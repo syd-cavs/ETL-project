@@ -1,26 +1,21 @@
 -- DROP TABLE ps4games CASCADE; 
--- DROP TABLE games_data;
+-- DROP TABLE sales_data;
 
 CREATE TABLE ps4games (
 	Game VARCHAR, 
-	Year INT,
+	Score INT,	
+	Gamers INT,
+	Completion_Percentage NUMERIC,	
+	Rating NUMERIC,
+	Minimum_Completion_Time INT,
+	Maximum_Completion_Time INT,
+	PRIMARY KEY (Game));
+	
+CREATE TABLE sales_data (
+	Game VARCHAR,
+	Year NUMERIC,
 	Genre VARCHAR,
 	Publisher VARCHAR,
-	NorthAmerica NUMERIC,
-	Europe NUMERIC,
-	Japan NUMERIC,
-	RestofWorld NUMERIC,
+	North_America NUMERIC,	
 	Global NUMERIC,
-	PRIMARY KEY (Game));
-
-CREATE TABLE games_data (
-	game VARCHAR,
-	score INT,	
-	leaderbord INT,
-	gamers INT,
-	comp_perc NUMERIC,
-	rating NUMERIC,
-	url VARCHAR,	
-	min_comp_time INT,
-	max_comp_time INT,
-	FOREIGN KEY (game) REFERENCES PS4Games(Game));
+	FOREIGN KEY (Game) REFERENCES ps4games(Game));
