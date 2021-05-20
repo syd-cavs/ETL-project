@@ -1,4 +1,4 @@
-Game,Score,Gamers,Completion_Percentage,Rating,Minimum_Completion_Time,Maximum_Completion_Time
+game,score,gamers,completion_percentage,rating,minimum_completion_time,maximum_completion_time
 Grand Theft Auto V,5913,231535,0.4,4.5,200,700
 Call of Duty: WWII,7360,154762,0.6,3.6,35,40
 FIFA 18,3098,67123,6.1,3.6,40,50
